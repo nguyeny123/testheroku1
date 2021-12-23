@@ -44,7 +44,7 @@ namespace test3
             // }
             // else
             // {
-                //services.AddDbContext<EcommerceContext>(options =>
+               // services.AddDbContext<EcommerceContext>(options =>
                 //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //}
             services.AddIdentity<AppUser, AppRole>()
