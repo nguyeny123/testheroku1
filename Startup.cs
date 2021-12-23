@@ -39,13 +39,13 @@ namespace test3
 
             // if (_env.EnvironmentName == EnvironmentName.Development)
             // {
-            //     services.AddDbContext<EcommerceContext>(options =>
-            //     options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+                 services.AddDbContext<EcommerceContext>(options =>
+                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             // }
             // else
             // {
-                services.AddDbContext<EcommerceContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                //services.AddDbContext<EcommerceContext>(options =>
+                //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //}
             services.AddIdentity<AppUser, AppRole>()
             .AddEntityFrameworkStores<EcommerceContext>()
